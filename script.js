@@ -1,6 +1,6 @@
 /**
  * Bikundo Farm Fresh - Main JavaScript
- * jQuery animations, sticky nav, lightbox, smooth scroll
+ * jQuery animations, sticky nav, smooth scroll
  */
 (function ($) {
   'use strict';
@@ -114,38 +114,6 @@
   }
 
   /**
-   * Gallery lightbox
-   */
-  function initLightbox() {
-    var $lightbox = $('#lightbox');
-    var $lightboxImg = $('#lightbox-img');
-    var $close = $('#lightbox-close');
-
-    $('.gallery-item').on('click', function (e) {
-      e.preventDefault();
-      var src = $(this).attr('data-src') || $(this).find('.gallery-img').attr('data-src');
-      if (src) {
-        $lightboxImg.attr('src', src);
-        $lightbox.removeClass('hidden').addClass('show').css('display', 'flex');
-        $('body').css('overflow', 'hidden');
-      }
-    });
-
-    function closeLightbox() {
-      $lightbox.addClass('hidden').removeClass('show');
-      $('body').css('overflow', '');
-    }
-
-    $close.on('click', closeLightbox);
-    $lightbox.on('click', function (e) {
-      if (e.target === this) closeLightbox();
-    });
-    $(document).on('keydown', function (e) {
-      if (e.key === 'Escape' && $lightbox.hasClass('show')) closeLightbox();
-    });
-  }
-
-  /**
    * Scroll to top button
    */
   function initScrollTop() {
@@ -248,7 +216,6 @@
     initMobileMenu();
     initHeroAnimation();
     initScrollReveal();
-    initLightbox();
     initScrollTop();
     setFooterYear();
     initLazyLoad();

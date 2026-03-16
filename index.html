@@ -8,7 +8,7 @@
   <title>Bikundo Farm Fresh | Premium 35-Day Broiler Chickens</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -21,8 +21,8 @@
             earth: '#5C3317',
           },
           fontFamily: {
-            sans: ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
-            display: ['Poppins', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+            display: ['Playfair Display', 'Georgia', 'serif'],
           },
         },
       },
@@ -30,7 +30,7 @@
   </script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-sans text-earth antialiased overflow-x-hidden">
+<body class="font-sans text-earth antialiased overflow-x-hidden page-with-bg">
   <!-- Sticky Navigation -->
   <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
     <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -47,8 +47,6 @@
         <li><a href="#about" class="nav-link hover:text-secondary transition-colors">About</a></li>
         <li><a href="#broilers" class="nav-link hover:text-secondary transition-colors">Our Broilers</a></li>
         <li><a href="#supply" class="nav-link hover:text-secondary transition-colors">Who We Supply</a></li>
-        <li><a href="#order" class="nav-link hover:text-secondary transition-colors">How to Order</a></li>
-        <li><a href="#gallery" class="nav-link hover:text-secondary transition-colors">Gallery</a></li>
         <li><a href="#contact" class="nav-link hover:text-secondary transition-colors">Contact</a></li>
         <li>
           <a href="https://wa.me/XXXXXXXXXXX?text=Hello%20Bikundo%20Farm%20Fresh%2C%20I%20want%20to%20order%2035-day%20broiler%20chickens." target="_blank" rel="noopener noreferrer" class="whatsapp-link btn-whatsapp-nav inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-secondary font-semibold px-4 py-2 rounded-lg transition-all">
@@ -64,18 +62,15 @@
         <li><a href="#about" class="block py-2 hover:text-secondary">About</a></li>
         <li><a href="#broilers" class="block py-2 hover:text-secondary">Our Broilers</a></li>
         <li><a href="#supply" class="block py-2 hover:text-secondary">Who We Supply</a></li>
-        <li><a href="#order" class="block py-2 hover:text-secondary">How to Order</a></li>
-        <li><a href="#gallery" class="block py-2 hover:text-secondary">Gallery</a></li>
         <li><a href="#contact" class="block py-2 hover:text-secondary">Contact</a></li>
         <li><a href="#whatsapp-order" class="block py-2 text-secondary font-semibold">Order on WhatsApp</a></li>
       </ul>
     </div>
   </header>
 
-  <main>
+  <main class="relative z-10">
     <!-- 1. HERO SECTION -->
     <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div class="hero-bg absolute inset-0 bg-cover bg-center bg-no-repeat"></div>
       <div class="hero-overlay absolute inset-0"></div>
       <div class="hero-content relative z-10 container mx-auto px-4 text-center pt-24 pb-16">
         <p class="hero-sub animate-fade-in text-primary font-medium uppercase tracking-widest text-sm mb-4">Premium Poultry from the Farm</p>
@@ -103,12 +98,12 @@
     </section>
 
     <!-- 2. ABOUT THE FARM -->
-    <section id="about" class="section-padding bg-cream scroll-reveal">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <span class="section-badge">Who We Are</span>
-          <h2 class="section-title">About the Farm</h2>
-          <p class="section-subtitle max-w-2xl mx-auto">
+    <section id="about" class="section-padding about-section scroll-reveal">
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-14 md:mb-20">
+          <span class="section-badge about-badge">Who We Are</span>
+          <h2 class="section-title about-headline">About the Farm</h2>
+          <p class="section-subtitle about-intro max-w-2xl mx-auto">
             Bikundo Farm Fresh specializes in raising healthy broilers in clean, controlled conditions. Our birds are ready at 35 days—reliable supply for restaurants and vendors.
           </p>
         </div>
@@ -148,7 +143,7 @@
     <!-- 3. OUR BROILERS -->
     <section id="broilers" class="section-padding bg-white scroll-reveal">
       <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
+        <div class="text-center mb-14 md:mb-20">
           <span class="section-badge">The Product</span>
           <h2 class="section-title">Our Broilers</h2>
           <p class="section-subtitle max-w-2xl mx-auto">
@@ -199,7 +194,7 @@
     <!-- 4. WHO WE SUPPLY -->
     <section id="supply" class="section-padding bg-primary scroll-reveal">
       <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
+        <div class="text-center mb-14 md:mb-20">
           <span class="section-badge section-badge-light">Our Customers</span>
           <h2 class="section-title text-white">Who We Supply</h2>
           <p class="section-subtitle text-white/90 max-w-2xl mx-auto">
@@ -236,37 +231,7 @@
       </div>
     </section>
 
-    <!-- 5. HOW TO ORDER -->
-    <section id="order" class="section-padding bg-cream scroll-reveal">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <span class="section-badge">Simple Process</span>
-          <h2 class="section-title">How to Order</h2>
-          <p class="section-subtitle max-w-2xl mx-auto">
-            Place your order in three easy steps.
-          </p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div class="order-step text-center">
-            <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg">1</div>
-            <h3 class="text-xl font-semibold text-earth mb-2">Choose quantity</h3>
-            <p class="text-earth/80">Decide how many broilers you need for your business.</p>
-          </div>
-          <div class="order-step text-center">
-            <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg">2</div>
-            <h3 class="text-xl font-semibold text-earth mb-2">Message us on WhatsApp</h3>
-            <p class="text-earth/80">Send us your order—we'll confirm availability and price.</p>
-          </div>
-          <div class="order-step text-center">
-            <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg">3</div>
-            <h3 class="text-xl font-semibold text-earth mb-2">Delivery or pickup</h3>
-            <p class="text-earth/80">Arrange delivery to your location or pick up from the farm.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. WHATSAPP ORDER SECTION -->
+    <!-- WHATSAPP ORDER SECTION -->
     <section id="whatsapp-order" class="section-padding bg-earth scroll-reveal">
       <div class="container mx-auto px-4 text-center">
         <h2 class="section-title text-white mb-4">Ready to Order?</h2>
@@ -280,47 +245,10 @@
       </div>
     </section>
 
-    <!-- 7. FARM GALLERY -->
-    <section id="gallery" class="section-padding bg-white scroll-reveal">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <span class="section-badge">See the Farm</span>
-          <h2 class="section-title">Farm Gallery</h2>
-          <p class="section-subtitle max-w-2xl mx-auto">
-            Our facilities, healthy birds, and daily operations.
-          </p>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="gallery-item cursor-pointer rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all aspect-square bg-primary/10" data-src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&q=80">
-            <div class="w-full h-full bg-cover bg-center gallery-img lazy-img" data-src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&q=80" style="background-image:url('https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400&q=80')"></div>
-            <span class="gallery-caption block p-3 text-sm font-medium text-earth bg-cream">Chickens</span>
-          </div>
-          <div class="gallery-item cursor-pointer rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all aspect-square bg-primary/10" data-src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80">
-            <div class="w-full h-full bg-cover bg-center gallery-img lazy-img" data-src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80" style="background-image:url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=400&q=80')"></div>
-            <span class="gallery-caption block p-3 text-sm font-medium text-earth bg-cream">Poultry House</span>
-          </div>
-          <div class="gallery-item cursor-pointer rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all aspect-square bg-primary/10" data-src="https://images.unsplash.com/photo-1570222094114-d1a5c2b2c936?w=800&q=80">
-            <div class="w-full h-full bg-cover bg-center gallery-img lazy-img" data-src="https://images.unsplash.com/photo-1570222094114-d1a5c2b2c936?w=800&q=80" style="background-image:url('https://images.unsplash.com/photo-1570222094114-d1a5c2b2c936?w=400&q=80')"></div>
-            <span class="gallery-caption block p-3 text-sm font-medium text-earth bg-cream">Farm Workers</span>
-          </div>
-          <div class="gallery-item cursor-pointer rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all aspect-square bg-primary/10" data-src="https://images.unsplash.com/photo-1587593810173-37a1e4a716e6?w=800&q=80">
-            <div class="w-full h-full bg-cover bg-center gallery-img lazy-img" data-src="https://images.unsplash.com/photo-1587593810173-37a1e4a716e6?w=800&q=80" style="background-image:url('https://images.unsplash.com/photo-1587593810173-37a1e4a716e6?w=400&q=80')"></div>
-            <span class="gallery-caption block p-3 text-sm font-medium text-earth bg-cream">Feeding Time</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Lightbox -->
-    <div id="lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/90 p-4">
-      <button id="lightbox-close" class="absolute top-4 right-4 text-white hover:text-secondary text-4xl z-10" aria-label="Close">&times;</button>
-      <img id="lightbox-img" src="" alt="Gallery" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl">
-    </div>
-
-    <!-- 8. TRUST SECTION -->
+    <!-- TRUST SECTION -->
     <section class="section-padding bg-cream scroll-reveal">
       <div class="container mx-auto px-4">
-        <div class="flex flex-wrap justify-center gap-8 md:gap-12 text-earth">
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-10 text-earth">
           <div class="trust-badge flex items-center gap-3">
             <span class="flex-shrink-0 w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center text-primary">✓</span>
             <span class="font-semibold">Farm Fresh</span>
@@ -344,7 +272,7 @@
     <!-- 9. CONTACT SECTION -->
     <section id="contact" class="section-padding bg-primary scroll-reveal">
       <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
+        <div class="text-center mb-14 md:mb-16">
           <span class="section-badge section-badge-light">Get in Touch</span>
           <h2 class="section-title text-white">Contact Us</h2>
         </div>
@@ -388,7 +316,6 @@
           <nav class="flex flex-wrap justify-center gap-6 text-sm">
             <a href="#about" class="hover:text-primary transition-colors">About</a>
             <a href="#broilers" class="hover:text-primary transition-colors">Our Broilers</a>
-            <a href="#order" class="hover:text-primary transition-colors">How to Order</a>
             <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
           </nav>
           <a href="https://wa.me/XXXXXXXXXXX?text=Hello%20Bikundo%20Farm%20Fresh%2C%20I%20want%20to%20order%2035-day%20broiler%20chickens." target="_blank" rel="noopener noreferrer" class="whatsapp-link inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold px-6 py-3 rounded-lg transition-colors">
