@@ -1,0 +1,238 @@
+/* ============================================
+   Bikundo Farm Fresh - Custom Styles
+   Premium agricultural brand
+   ============================================ */
+
+:root {
+  --primary: #30D5C8;
+  --primary-dark: #26b8ad;
+  --primary-light: #5aded4;
+  --secondary: #5C3317;
+  --secondary-dark: #4a2912;
+  --secondary-light: #734321;
+  --cream: #f8f6f0;
+  --earth: #5C3317;
+}
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+}
+
+/* Hero background - farm/poultry themed */
+.hero-bg {
+  background-image: url('https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=1920&q=85');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .hero-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* Section spacing */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* Section badges */
+.section-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.section-badge-light {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--earth);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--earth);
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* Sticky header - scrolled state (logo turquoise) */
+header.scrolled {
+  background: rgba(48, 213, 200, 0.98);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.scrolled .nav-link,
+header.scrolled a:first-child {
+  color: #fff;
+}
+
+header.scrolled .btn-whatsapp-nav {
+  color: var(--secondary);
+  background: #fff;
+}
+
+header.scrolled .btn-whatsapp-nav:hover {
+  background: var(--cream);
+}
+
+/* Hero animations - initial state for JS */
+.hero-sub,
+.hero-title,
+.hero-text,
+.animate-cta {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Scroll reveal - initial state + transition */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* About cards hover */
+.about-card:hover {
+  border-color: rgba(26, 95, 60, 0.15);
+}
+
+/* Broiler cards */
+.broiler-card:hover {
+  border-color: rgba(26, 95, 60, 0.2);
+}
+
+/* Order steps - optional connector line on desktop */
+@media (min-width: 768px) {
+  .order-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: calc(50% + 2rem);
+    width: calc(100% - 4rem);
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), transparent);
+    opacity: 0.3;
+  }
+
+  .order-step {
+    position: relative;
+  }
+}
+
+/* Gallery items */
+.gallery-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+
+.gallery-img {
+  min-height: 140px;
+}
+
+/* Lightbox */
+#lightbox {
+  transition: opacity 0.3s ease;
+}
+
+#lightbox.show {
+  display: flex !important;
+  opacity: 1;
+}
+
+#lightbox img {
+  animation: lightboxZoom 0.3s ease;
+}
+
+@keyframes lightboxZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Trust badges */
+.trust-badge {
+  transition: transform 0.2s ease;
+}
+
+.trust-badge:hover {
+  transform: translateY(-2px);
+}
+
+/* Scroll to top button - visible state */
+#scroll-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Lazy loading placeholder */
+.lazy-img {
+  background-color: rgba(26, 95, 60, 0.08);
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+/* Print */
+@media print {
+  header,
+  #scroll-top,
+  .btn-primary,
+  .btn-secondary,
+  .whatsapp-cta,
+  footer a[href*="wa.me"] {
+    box-shadow: none !important;
+  }
+
+  .hero-overlay {
+    background: rgba(45, 74, 62, 0.95);
+  }
+}
