@@ -24,6 +24,15 @@ body {
   position: relative;
   min-height: 100%;
   letter-spacing: 0.01em;
+  font-size: 1.0625rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.125rem;
+  }
 }
 
 /* Full-page broiler background (same as hero) - behind all content */
@@ -104,6 +113,9 @@ body {
 .hero-content .hero-sub {
   color: var(--primary);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
 }
 
 .hero-content .hero-title {
@@ -117,6 +129,29 @@ body {
 .hero-content .hero-text {
   color: rgba(255, 255, 255, 0.98);
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.75), 0 0 20px rgba(0, 0, 0, 0.45);
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.65;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  .hero-content .hero-sub {
+    font-size: 0.9375rem;
+  }
+
+  .hero-content .hero-text {
+    font-size: 1.375rem;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-content .hero-text {
+    font-size: 1.5rem;
+  }
 }
 
 .hero-content .btn-secondary {
@@ -133,13 +168,13 @@ body {
   }
 
   .hero-content .hero-title {
-    font-size: 1.875rem;
-    line-height: 1.2;
+    font-size: 2.125rem;
+    line-height: 1.15;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
   }
 
   .hero-content .hero-text {
-    font-size: 1rem;
+    font-size: 1.125rem;
     text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
   }
 }
@@ -208,29 +243,35 @@ body {
 
 #broilers .broilers-title {
   font-weight: 700;
-  font-size: 2.125rem;
-  letter-spacing: -0.03em;
+  font-size: 2.375rem;
+  letter-spacing: -0.035em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 @media (min-width: 768px) {
   #broilers .broilers-title {
-    font-size: 3rem;
+    font-size: 3.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #broilers .broilers-title {
+    font-size: 3.625rem;
   }
 }
 
 .broilers-lede {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   font-weight: 500;
-  line-height: 1.75;
+  line-height: 1.78;
   letter-spacing: 0.02em;
 }
 
 @media (min-width: 768px) {
   .broilers-lede {
-    font-size: 1.1875rem;
-    max-width: 42ch;
+    font-size: 1.3125rem;
+    max-width: 46ch;
   }
 }
 
@@ -278,50 +319,54 @@ body {
   margin-top: 1.25rem;
   padding: 0 0.25rem;
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-  font-size: 0.8125rem;
-  line-height: 1.6;
+  font-size: 0.9375rem;
+  line-height: 1.65;
   color: var(--secondary);
-  opacity: 0.78;
-  letter-spacing: 0.03em;
+  opacity: 0.85;
+  letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 .broilers-caption-label {
   display: block;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--primary-dark);
   opacity: 0.95;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
 }
 
 .broilers-editorial-lead {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 500;
-  line-height: 1.58;
+  line-height: 1.55;
   color: var(--secondary);
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
 }
 
 @media (min-width: 768px) {
   .broilers-editorial-lead {
-    font-size: 1.45rem;
+    font-size: 1.625rem;
+    line-height: 1.52;
   }
 }
 
 .broilers-editorial-body {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-  font-size: 0.9875rem;
-  line-height: 1.85;
+  font-size: 1.0625rem;
+  line-height: 1.88;
   color: var(--secondary);
-  opacity: 0.9;
+  opacity: 0.92;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
   .broilers-editorial-body {
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
+    line-height: 1.86;
   }
 }
 
@@ -352,7 +397,7 @@ body {
 
 .broilers-stat-value {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 2.25rem;
+  font-size: 2.625rem;
   font-weight: 600;
   color: var(--primary-dark);
   line-height: 1;
@@ -361,7 +406,7 @@ body {
 
 .broilers-stat-unit {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.18em;
@@ -373,11 +418,11 @@ body {
 .broilers-stat-label {
   flex-basis: 100%;
   margin-top: 0.65rem;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 500;
-  line-height: 1.45;
+  line-height: 1.5;
   color: var(--secondary);
-  opacity: 0.88;
+  opacity: 0.9;
 }
 
 .broilers-pillar-icon {
@@ -406,13 +451,24 @@ body {
 #broilers .broilers-pillar-title {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.3125rem;
   letter-spacing: -0.02em;
 }
 
 @media (min-width: 768px) {
   #broilers .broilers-pillar-title {
-    font-size: 1.35rem;
+    font-size: 1.4375rem;
+  }
+}
+
+#broilers .broiler-pillar p {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+@media (min-width: 768px) {
+  #broilers .broiler-pillar p {
+    font-size: 1.0625rem;
   }
 }
 
@@ -444,17 +500,24 @@ footer {
 .section-badge {
   display: inline-block;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--primary);
-  margin-bottom: 1rem;
-  padding: 0.35rem 0.9rem;
+  margin-bottom: 1.15rem;
+  padding: 0.5rem 1.15rem;
   border: 1px solid rgba(48, 213, 200, 0.4);
   border-radius: 100px;
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(8px);
+}
+
+@media (min-width: 768px) {
+  .section-badge {
+    font-size: 0.875rem;
+    padding: 0.55rem 1.25rem;
+  }
 }
 
 .section-badge-light {
@@ -467,24 +530,31 @@ footer {
 /* Section titles - Playfair Display for premium feel */
 .section-title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.875rem;
-  font-weight: 600;
+  font-size: 2.125rem;
+  font-weight: 700;
   color: var(--secondary);
-  margin-bottom: 1.25rem;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  margin-bottom: 1.35rem;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
 }
 
 @media (min-width: 768px) {
   .section-title {
-    font-size: 2.75rem;
-    margin-bottom: 1.5rem;
+    font-size: 3.125rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-title {
+    font-size: 3.5rem;
   }
 }
 
 @media (max-width: 640px) {
   .section-title {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    line-height: 1.14;
   }
 }
 
@@ -494,23 +564,34 @@ footer {
 #whatsapp-order .section-title {
   font-family: 'Playfair Display', Georgia, serif;
   color: #ffffff;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
 }
 
 .section-subtitle {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.0625rem;
-  font-weight: 400;
+  font-size: 1.125rem;
+  font-weight: 500;
   color: var(--secondary);
-  opacity: 0.92;
-  line-height: 1.7;
-  letter-spacing: 0.01em;
-  max-width: 36ch;
+  opacity: 0.95;
+  line-height: 1.75;
+  letter-spacing: 0.015em;
+  max-width: min(48rem, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .section-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.72;
+  }
 }
 
 @media (max-width: 640px) {
   .section-subtitle {
-    font-size: 0.9375rem;
+    font-size: 1.0625rem;
+    line-height: 1.72;
   }
 }
 
@@ -578,37 +659,51 @@ header.scrolled .btn-whatsapp-nav:hover {
 /* About section - bold typography, broiler shows through */
 #about .section-badge {
   font-weight: 700;
-  letter-spacing: 0.22em;
-  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  font-size: 0.8125rem;
+}
+
+@media (min-width: 768px) {
+  #about .section-badge {
+    font-size: 0.875rem;
+  }
 }
 
 #about .section-title {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 700;
-  font-size: 2.25rem;
-  letter-spacing: -0.03em;
+  font-size: 2.5rem;
+  letter-spacing: -0.035em;
   color: var(--secondary);
 }
 
 @media (min-width: 768px) {
   #about .section-title {
-    font-size: 3rem;
+    font-size: 3.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #about .section-title {
+    font-size: 3.625rem;
   }
 }
 
 #about .about-intro.section-subtitle {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 1.65;
+  font-size: 1.1875rem;
+  line-height: 1.72;
   color: var(--secondary);
   opacity: 1;
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  max-width: min(44rem, 100%);
 }
 
 @media (min-width: 768px) {
   #about .about-intro.section-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.3125rem;
+    line-height: 1.7;
   }
 }
 
@@ -635,21 +730,30 @@ header.scrolled .btn-whatsapp-nav:hover {
 .about-card h3 {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 700;
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   letter-spacing: -0.02em;
   color: var(--secondary);
 }
 
 @media (min-width: 768px) {
   .about-card h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 
 .about-card p {
   font-weight: 500;
+  font-size: 1.0625rem;
+  line-height: 1.68;
   color: var(--secondary);
   opacity: 0.92;
+}
+
+@media (min-width: 768px) {
+  .about-card p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
 }
 
 /* Broiler cards - premium */
@@ -747,13 +851,43 @@ header.scrolled .btn-whatsapp-nav:hover {
 .supply-card h3 {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .supply-card h3 {
+    font-size: 1.3125rem;
+  }
+}
+
+#supply .supply-card p {
+  font-size: 1.0625rem;
+  line-height: 1.62;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  #supply .supply-card p {
+    font-size: 1.125rem;
+  }
+}
+
+#supply .supply-card {
+  padding: 1.5rem 1.35rem;
+}
+
+@media (min-width: 768px) {
+  #supply .supply-card {
+    padding: 1.75rem 1.5rem;
+  }
 }
 
 /* Trust section - premium pill badges */
 .trust-badge {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  padding: 0.6rem 1.25rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 100px;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
@@ -769,7 +903,14 @@ header.scrolled .btn-whatsapp-nav:hover {
 
 .trust-badge span:last-child {
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
+  font-size: 1.0625rem;
+}
+
+@media (min-width: 768px) {
+  .trust-badge span:last-child {
+    font-size: 1.125rem;
+  }
 }
 
 /* WhatsApp CTA - premium button */
@@ -789,7 +930,71 @@ header.scrolled .btn-whatsapp-nav:hover {
 #contact h3 {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 768px) {
+  #contact h3 {
+    font-size: 1.3125rem;
+  }
+}
+
+#contact .grid > div > p {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+/* Office address — match premium section scale */
+#office-address .section-subtitle {
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  #office-address .section-subtitle {
+    font-size: 1.3125rem;
+    line-height: 1.72;
+  }
+}
+
+#office-address h3.font-semibold {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+#office-address .rounded-2xl p {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  #office-address h3.font-semibold {
+    font-size: 1.3125rem;
+  }
+
+  #office-address .rounded-2xl p {
+    font-size: 1.125rem;
+  }
+}
+
+/* WhatsApp order strip */
+#whatsapp-order .container > p {
+  font-size: 1.25rem;
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  #whatsapp-order .container > p {
+    font-size: 1.375rem;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Footer - refined */
