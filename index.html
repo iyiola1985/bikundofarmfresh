@@ -143,52 +143,92 @@
     </section>
 
     <!-- 3. OUR BROILERS -->
-    <section id="broilers" class="section-padding bg-white scroll-reveal">
+    <section id="broilers" class="broilers-section section-padding scroll-reveal">
       <div class="container mx-auto px-4">
-        <div class="text-center mb-14 md:mb-20">
-          <span class="section-badge">The Product</span>
-          <h2 class="section-title">Our Broilers</h2>
-          <p class="section-subtitle max-w-2xl mx-auto">
-            35-day mature broilers—strong, healthy birds at the perfect weight for restaurants, frying, grilling, or resale. Available in bulk.
+        <div class="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
+          <span class="section-badge broilers-badge">The Product</span>
+          <h2 class="section-title broilers-title">Our Broilers</h2>
+          <p class="broilers-lede text-earth/90 max-w-2xl mx-auto">
+            Thirty-five-day mature broilers raised in clean, professionally managed housing—with nutrition, hydration, and daily care held to a standard you can see.
           </p>
         </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="broiler-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all border border-primary/5 bg-cream/50">
-            <div class="aspect-video bg-primary/10 flex items-center justify-center p-6">
-              <svg class="w-16 h-16 text-primary/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-            </div>
-            <div class="p-6">
-              <h3 class="font-semibold text-earth mb-2">Strong & Healthy</h3>
-              <p class="text-sm text-earth/80">Vigorously raised with quality nutrition and care.</p>
-            </div>
+
+        <div class="broilers-showcase grid lg:grid-cols-12 gap-10 lg:gap-12 xl:gap-16 items-start">
+          <div class="lg:col-span-5 xl:col-span-5">
+            <figure class="broilers-showcase-frame">
+              <div class="broilers-showcase-img-wrap">
+                <img
+                  src="assets/broilers-facility.png"
+                  alt="Bikundo Farm Fresh poultry houses: healthy broilers on clean litter with feeders and drinkers, and organized multi-tier housing with feed and water lines."
+                  class="broilers-showcase-img"
+                  width="800"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <figcaption class="broilers-showcase-caption">
+                <span class="broilers-caption-label">On the farm</span>
+                Clean housing, abundant feed, and fresh water—every day.
+              </figcaption>
+            </figure>
           </div>
-          <div class="broiler-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all border border-primary/5 bg-cream/50">
-            <div class="aspect-video bg-secondary/10 flex items-center justify-center p-6">
-              <svg class="w-16 h-16 text-secondary-dark/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          <div class="lg:col-span-7 xl:col-span-7 space-y-8 lg:pt-2">
+            <div class="broilers-editorial">
+              <p class="broilers-editorial-lead">
+                This is how we keep our birds: spacious, well-ventilated housing, dry litter underfoot, and modern feeding and drinking systems so every flock eats and drinks on demand—not in bursts when someone remembers.
+              </p>
+              <p class="broilers-editorial-body">
+                Our facilities blend thoughtful floor-reared environments with disciplined, high-capacity systems. Quality feed is always within reach; water lines and drinkers stay reliable. Light, airflow, and housekeeping are part of the routine—not an afterthought—so the birds stay vigorous and the meat stays consistent.
+              </p>
+              <p class="broilers-editorial-body">
+                At thirty-five days you get broilers at the right weight for kitchens and resale: firm, well-finished, and raised under conditions we are proud to show—because premium supply starts with how the birds are kept.
+              </p>
             </div>
-            <div class="p-6">
-              <h3 class="font-semibold text-earth mb-2">Perfect Weight</h3>
-              <p class="text-sm text-earth/80">Ideal size for restaurant portions and resale.</p>
-            </div>
+            <ul class="broilers-stats grid sm:grid-cols-2 gap-4" role="list">
+              <li class="broilers-stat">
+                <span class="broilers-stat-value">35</span>
+                <span class="broilers-stat-unit">days</span>
+                <span class="broilers-stat-label">Mature, market-ready broilers</span>
+              </li>
+              <li class="broilers-stat">
+                <span class="broilers-stat-value">24/7</span>
+                <span class="broilers-stat-unit">access</span>
+                <span class="broilers-stat-label">Feed &amp; fresh water systems</span>
+              </li>
+            </ul>
           </div>
-          <div class="broiler-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all border border-primary/5 bg-cream/50">
-            <div class="aspect-video bg-primary/10 flex items-center justify-center p-6">
-              <svg class="w-16 h-16 text-primary/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/></svg>
+        </div>
+
+        <div class="broilers-pillars grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 mt-14 md:mt-20">
+          <article class="broiler-card broiler-pillar rounded-2xl p-7 md:p-8 border border-primary/10 bg-white/80 backdrop-blur-sm">
+            <div class="broilers-pillar-icon" aria-hidden="true">
+              <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
             </div>
-            <div class="p-6">
-              <h3 class="font-semibold text-earth mb-2">Versatile Use</h3>
-              <p class="text-sm text-earth/80">Perfect for frying, grilling, or resale.</p>
+            <h3 class="broilers-pillar-title font-display text-xl font-semibold text-earth mb-2">Immaculate housing</h3>
+            <p class="text-sm text-earth/85 leading-relaxed">Dry litter, generous space, and ventilation that keeps air moving—so birds stay comfortable and stress stays low.</p>
+          </article>
+          <article class="broiler-card broiler-pillar rounded-2xl p-7 md:p-8 border border-primary/10 bg-white/80 backdrop-blur-sm">
+            <div class="broilers-pillar-icon" aria-hidden="true">
+              <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
             </div>
-          </div>
-          <div class="broiler-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all border border-primary/5 bg-cream/50">
-            <div class="aspect-video bg-secondary/10 flex items-center justify-center p-6">
-              <svg class="w-16 h-16 text-secondary-dark/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            <h3 class="broilers-pillar-title font-display text-xl font-semibold text-earth mb-2">Premium nutrition</h3>
+            <p class="text-sm text-earth/85 leading-relaxed">Balanced rations and always-available feed—so growth is steady and the flock never runs short between checks.</p>
+          </article>
+          <article class="broiler-card broiler-pillar rounded-2xl p-7 md:p-8 border border-primary/10 bg-white/80 backdrop-blur-sm">
+            <div class="broilers-pillar-icon" aria-hidden="true">
+              <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
             </div>
-            <div class="p-6">
-              <h3 class="font-semibold text-earth mb-2">Bulk Orders</h3>
-              <p class="text-sm text-earth/80">Available in bulk for businesses and resellers.</p>
+            <h3 class="broilers-pillar-title font-display text-xl font-semibold text-earth mb-2">Hydration &amp; care</h3>
+            <p class="text-sm text-earth/85 leading-relaxed">Drinkers and water lines maintained for constant, clean water—paired with daily attention from people who know the flock.</p>
+          </article>
+          <article class="broiler-card broiler-pillar rounded-2xl p-7 md:p-8 border border-primary/10 bg-white/80 backdrop-blur-sm">
+            <div class="broilers-pillar-icon" aria-hidden="true">
+              <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
             </div>
-          </div>
+            <h3 class="broilers-pillar-title font-display text-xl font-semibold text-earth mb-2">Consistent quality</h3>
+            <p class="text-sm text-earth/85 leading-relaxed">Uniform conditioning for restaurants, vendors, and bulk buyers—delivered with the same standards you see in our houses.</p>
+          </article>
         </div>
       </div>
     </section>
